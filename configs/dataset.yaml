@@ -1,0 +1,27 @@
+# Dataset configuration for Road Hazard Detection
+# CSE3240 - Computer Vision | Vashisht Reddy | 23FE10CSE00256
+
+path: ./data  # Root dataset directory
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 5
+
+# Class names
+names:
+  0: pothole
+  1: stray_animal
+  2: fallen_debris
+  3: waterlogging
+  4: construction_barrier
+
+# Class weights (for handling imbalance)
+# Approximate weights based on inverse frequency
+class_weights:
+  pothole: 1.0
+  stray_animal: 1.45
+  fallen_debris: 1.59
+  waterlogging: 2.08
+  construction_barrier: 2.94
